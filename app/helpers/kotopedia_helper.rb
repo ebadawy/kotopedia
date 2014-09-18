@@ -1,0 +1,2 @@
+module KotopediaHelper
+end
