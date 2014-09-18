@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  book/s: MyString
+  old_price: 1
+  new_price: 1
+  available_till: 2014-09-18
+
+two:
+  book/s: MyString
+  old_price: 1
+  new_price: 1
+  available_till: 2014-09-18

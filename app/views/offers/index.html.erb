@@ -1,0 +1,32 @@
+<h1 style="text-align:center">The <span style="color:red">NOW</span> available offers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Book/s</th>
+      <th>Old price</th>
+      <th>New price</th>
+      <th>Available till</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @offers.each do |offer| %>
+      <tr>
+        <td><%= offer.book_s %></td>
+        <td><%= offer.old_price %></td>
+        <td><%= offer.new_price %></td>
+        <td><%= offer.available_till %></td>
+        <td><%= link_to 'Show', offer %></td>
+        <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
+        <td><%= link_to 'Destroy', offer, method: :delete, data: { confirm: 'Are you sure you want to delete this offer permenantly !?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Add a new Offer', new_offer_path %>
+
